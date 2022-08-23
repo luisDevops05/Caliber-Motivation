@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Changa", sans-serif;
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Changa&family=Slabo+27px&family=Zen+Dots&display=swap");
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: black;
+  border-bottom: white 10px solid;
+}
+
+header h1 {
+  border: solid white 1px;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+header p {
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+  text-decoration: underline;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: black;
+  border-top: white 10px solid;
+}
+
+footer h1 {
+  border: solid white 1px;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin-top: 40px;
+}
+footer p {
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.quoteContainer {
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: 250px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+.quotes {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 100px 100px;
+  justify-content: end;
+  margin-right: 100px;
+}
+@media only screen and (max-width: 920px) {
+  .container {
+    grid-template-columns: 600px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    grid-template-columns: 400px;
+    justify-content: center;
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .container {
+    grid-template-columns: 300px;
+    row-gap: 40px;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .quoteContainer {
+    grid-template-columns: 350px;
+  }
+  .container {
+    grid-template-columns: 250px;
+    row-gap: 40px;
+    padding-bottom: 40px;
+  }
+}
