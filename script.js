@@ -1,8 +1,4 @@
-
 let heading = document.getElementById('quote')
-
-
-
 
 const apiUrl = 'https://favqs.com/api/qotd'
 
@@ -23,10 +19,10 @@ function displayUser(results){
 
  let body = results.quote
  heading.textContent= body.body
-console.log(body.body)
+
 
 }
-window.setInterval('refresh()', 5000); 	
+window.setInterval('refresh()', 10000); 	
 // Call a function every 10000 milliseconds 
 // (OR 10 seconds).
 
